@@ -1,0 +1,97 @@
+﻿=== GET /api/users ===
+[
+    {
+        "id":  "9e781be8-4f04-4de2-9d2f-ded867859e0a",
+        "name":  "Usuario de ejemplo",
+        "email":  "demo@librarylab.local",
+        "status":  1
+    },
+    {
+        "id":  "4df8fdc6-d86b-47f2-a832-9717e4bd136a",
+        "name":  "VERIFY usuario 841353f4716c447e9b85577fa8aa83f2",
+        "email":  "verify-841353f4716c447e9b85577fa8aa83f2@example.test",
+        "status":  1
+    }
+]
+=== GET /api/books ===
+[
+    {
+        "id":  "1c9b29dd-011e-4edf-82b4-7de3557e3915",
+        "isbn":  "978-958-42-0000-1",
+        "title":  "Cien años de soledad",
+        "author":  "Gabriel García Márquez",
+        "status":  1,
+        "isAvailable":  true
+    },
+    {
+        "id":  "73a33f99-d50a-463a-af97-546ee36d4fea",
+        "isbn":  "VERIFY-4abf955b1df44",
+        "title":  "VERIFY concurrencia 841353f4716c447e9b85577fa8aa83f2",
+        "author":  "VERIFY autor",
+        "status":  1,
+        "isAvailable":  true
+    },
+    {
+        "id":  "72ecb9c2-01cc-43ff-8469-7535eaac63ee",
+        "isbn":  "VERIFY-841353f4716c4",
+        "title":  "VERIFY libro 841353f4716c447e9b85577fa8aa83f2",
+        "author":  "VERIFY autor",
+        "status":  1,
+        "isAvailable":  true
+    }
+]
+=== GET /api/equipment ===
+[
+    {
+        "id":  "a7e249c2-68b5-43c2-a4d0-884017f5bca3",
+        "inventoryCode":  "EQ-DEMO-001",
+        "name":  "Portátil de demostración",
+        "type":  1,
+        "status":  1,
+        "isAvailable":  true
+    },
+    {
+        "id":  "5eb02e9b-4312-4512-b4a8-f43733ca6a42",
+        "inventoryCode":  "VERIFY-841353f4716c447e9b85577fa8aa83f2",
+        "name":  "VERIFY equipo 841353f4716c447e9b85577fa8aa83f2",
+        "type":  1,
+        "status":  1,
+        "isAvailable":  true
+    }
+]
+=== GET /api/loans ===
+[
+    {
+        "id":  "44701b57-1b7f-427b-bf74-c160d4bcab16",
+        "userId":  "4df8fdc6-d86b-47f2-a832-9717e4bd136a",
+        "resourceId":  "73a33f99-d50a-463a-af97-546ee36d4fea",
+        "resourceKind":  1,
+        "borrowedAt":  "2026-10-16T00:23:09.29673+00:00",
+        "dueAt":  "2026-10-23T00:23:08.53666+00:00",
+        "returnedAt":  "2026-10-16T00:23:09.466166+00:00",
+        "status":  2,
+        "isOverdue":  false
+    },
+    {
+        "id":  "56ea7000-15cc-4b72-a6d2-cd17f3d1acc2",
+        "userId":  "4df8fdc6-d86b-47f2-a832-9717e4bd136a",
+        "resourceId":  "5eb02e9b-4312-4512-b4a8-f43733ca6a42",
+        "resourceKind":  2,
+        "borrowedAt":  "2026-10-16T00:23:09.107345+00:00",
+        "dueAt":  "2026-10-23T00:23:08.53666+00:00",
+        "returnedAt":  "2026-10-16T00:23:09.191477+00:00",
+        "status":  2,
+        "isOverdue":  false
+    },
+    {
+        "id":  "4c0c5452-7755-4ec8-b2aa-b5ae4cc644c9",
+        "userId":  "4df8fdc6-d86b-47f2-a832-9717e4bd136a",
+        "resourceId":  "72ecb9c2-01cc-43ff-8469-7535eaac63ee",
+        "resourceKind":  1,
+        "borrowedAt":  "2026-10-16T00:23:08.655505+00:00",
+        "dueAt":  "2026-10-23T00:23:08.53666+00:00",
+        "returnedAt":  "2026-10-16T00:23:09.013863+00:00",
+        "status":  2,
+        "isOverdue":  false
+    }
+]

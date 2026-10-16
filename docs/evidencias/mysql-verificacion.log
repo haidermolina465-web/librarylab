@@ -1,0 +1,23 @@
+﻿=== MySQL version / puerto 3306 ===
+VERSION()
+26.7.0
+@@port
+3306
+=== Tablas ===
+Tables_in_library_lab
+__efmigrationshistory
+books
+equipment
+loans
+resources
+users
+=== Conteos ===
+t	n
+Users	2
+Books	3
+Equipment	2
+Loans	3
+Loans activos	0
+=== Registros VERIFY ===
+Id	Name
+4df8fdc6-d86b-47f2-a832-9717e4bd136a	VERIFY usuario 841353f4716c447e9b85577fa8aa83f2
