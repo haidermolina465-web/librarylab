@@ -78,7 +78,15 @@ Resultado: 39 pruebas correctas, 0 con error, 0 omitidas.
 - `logs/api3306.out.log`: log de inicio de la API y siembra de datos (contra el puerto 3306).
 - `logs/api3306.err.log`: log de errores de la API (vacío).
 
-## 6. Notas sobre el servidor MySQL
+## 6. Capturas de pantalla
+
+- `captura-mysql.png`: consola del cliente MySQL mostrando la versión, el puerto 3306,
+  la base `library_lab`, sus tablas y datos reales almacenados.
+- `captura-swagger.png`: interfaz Swagger de la API en ejecución (`http://localhost:5109/swagger`).
+- `captura-api-usuarios.png`: respuesta real de `GET /api/users` (datos servidos desde MySQL).
+- `captura-api-prestamos.png`: respuesta real de `GET /api/loans`.
+
+## 7. Notas sobre el servidor MySQL
 
 El servicio de MySQL se ejecuta como **proceso manual** (no como servicio de Windows),
 porque registrar un servicio requiere privilegios de administrador en este equipo.
